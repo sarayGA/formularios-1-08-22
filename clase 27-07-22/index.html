@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css|">
+    <title>Formulario con validaciones</title>
+</head>
+<body>
+   <main>
+       <form action="" class="formulario" id="formulario">
+           <!---USUARIO-->
+           <div class="Formulario_grupo" id="grupo_usuario">
+               <label for="usuario" class="label_usuario">Usuario</label>
+               <div class="formulario_grupo-input">
+                   <input type="text" class="formulario-input" name="usuario" id="usuario" placeholder="candy_203">  
+                   <i class="estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario_input-error">El usuario tiene que ser de 4 a 16 dijitos y solo puede contener numeros,
+                   letras y guion bajo
+               </p>
+
+           </div>
+            <!---NOMBRE-->
+            <div class="Formulario_grupo" id="grupo_usuario">
+                <label for="nombre" class="label_usuario">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="franco">  
+                    <i class="estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">El nombre solo debe contener letras </p>
+ 
+            </div>
+            <!---CONTRASEÑA-->
+            <div class="Formulario_grupo" id="grupo_usuario">
+                <label for="password" class="label_usuario">Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario-input" name="Contraseña" id="Contraseña" placeholder="cam203_d5">  
+                    <i class="estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">La contraseña debe contener al menos 6 dijitos</p>
+ 
+            </div>
+            <!---CONTRASEÑA 2-->
+            <div class="Formulario_grupo" id="grupo_usuario">
+                <label for="password" class="label_usuario">Repetir contraseña </label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario-input" name=" repetir Contraseña" id="repetir Contraseña" placeholder="cam203_d5">  
+                    <i class="estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">Ambas contraseñas deben ser iguales</p>
+            </div>
+ 
+             <!---CORREO ELECTRONICO-->
+            <div class="Formulario_grupo" id="grupo_usuario">
+                <label for="correo" class="label_usuario">Correo electronico</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario-input" name="Correo" id="Correp" placeholder="correo@.com">  
+                    <i class="estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">El correo electronico solo puede contoner letras, numeros, puntos guion medio y guion bajo</p>
+            </div>
+ 
+            
+            <!---Telefono-->
+            <div class="Formulario_grupo" id="grupo_usuario">
+                <label for="telefono" class="label_usuario">Teléfono</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario-input" name="Telefono" id="Telefono" placeholder="5520264">  
+                    <i class="estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input-error">Solo pueden ingresar números</p>
+            </div>
+
+            <!---Terminos y condiciones-->
+            <div class="formulario_grupo">
+                <label for="label_form"> </label>
+                <input type="checkbox" type="checkbox" name = "Terminos" id="terminos"> 
+                Acepto terminos y condiciones
+            </div>
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error</b>
+                    Por favor rellenar el formulario completamente
+                </p>
+            </div>
+
+            <!--Botó<n-->
+                <div class="formulario_grupo btn-enviar">
+                    <button type="submit" class="formulario_btn">ENVIAR</button>
+                    <p>Formulario enviado exitosamente</p>
+                </div>
+ 
+       </form>
+   </main> 
+   <script src="js/formulario.js"></script>
+</body>
+</html>
